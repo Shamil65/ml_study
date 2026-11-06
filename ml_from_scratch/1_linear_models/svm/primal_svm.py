@@ -29,9 +29,6 @@ class MySVM():
 
         if verbose:
             self._log(0, self._calculate_loss(X_mat, y_vec, self.weights, self.b))
-            
-        
-   
 
         for i in range(1, self.n_iter + 1):
             X_batch, y_batch = self._get_batch(X_mat, y_vec, self.sgd_sample)
